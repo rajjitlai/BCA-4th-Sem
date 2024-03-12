@@ -44,3 +44,7 @@ To run the tests for this project, follow these steps:
 ## Questions
 
 If you have any questions about this project, please feel free to create a new issue
+
+## List of contents
+1. Exercise 1 - Normal heading and p tags [Exercise-01](./Exercise-01/index.html)
+2. Exercise 2 - Code demonstration using anchor tag [Exercise-02](./Exercise-02/index.html)
