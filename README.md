@@ -4,9 +4,7 @@ This repository contains the code for a website that uses HTML and CSS. The code
 
 ## Usage
 
-To use this project, follow these steps:
-
-1. Open the file "index.html" in a web browser.
+To use this project open the file "index.html" in a web browser.
 
 ## Contributing
 
@@ -22,7 +20,7 @@ Thank you for your interest in contributing to our college project! We value you
 6. Push Changes: Push your changes to your forked repository.
 7. Submit a Pull Request: Finally, submit a pull request, and our team will review your contributions.
 ### Guidelines
-- Please follow the code of conduct and adhere to our project's guidelines.
+- Please follow the [code of conduct](./Shared/code_of_conduct.md) and adhere to our project's guidelines.
 - If you're working on a new feature, consider opening an issue first to discuss it with the team.
 - Write clear, concise commit messages and code comments to ensure readability.
 - Test your changes thoroughly before submitting a pull request.
