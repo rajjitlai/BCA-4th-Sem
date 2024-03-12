@@ -28,7 +28,7 @@ Thank you for your interest in contributing to our college project! We value you
 - Test your changes thoroughly before submitting a pull request.
 - Be open to feedback and willing to collaborate with others.
 ### Get in Touch
-If you have any questions or need assistance, don't hesitate to reach out. You can contact us via email or open an issue in our repository. We're here to help and support you throughout your contribution journey.
+If you have any questions or need assistance, don't hesitate to reach out. You can [contact us](mailto:rajjitlai@mail.com) via email or [open an issue](https://github.com/rajjitlai/BCA-4th-Sem-Web/issues/new) in our repository. We're here to help and support you throughout your contribution journey.
 
 Thank you for being a part of our community and for helping us make this project a success!
 
