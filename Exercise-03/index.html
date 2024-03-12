@@ -1,0 +1,79 @@
+<!-- Write a HTML program to design a form which should allow to enter your
+personal data (Hint: make use of text field, password field, email, list, radio
+buttons, checkboxes, submit button) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body style="margin: 0; padding: 0;box-sizing: border-box;">
+    <div
+        style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+        <h2>Please fill in your details</h2>
+        <form
+            style="max-width: 640px; width: 100%; margin: 0 auto;  color: #000; text-align: center; padding: 30px 35px; background: rgba(0, 0, 0, 0.2); border-radius: 10px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; gap: 1rem; align-items: flex-start;">
+            <div>
+                <label style="font-weight: bold;">Full Name:</label>
+                <input type="text" name="fullname" required
+                    style="width: 100%; padding: 10px 0px 10px 10px;  margin-bottom: 15px; outline: none;">
+            </div>
+            <div>
+                <label style="font-weight: bold;">Email:</label>
+                <input type="email" name="email" required
+                    style="width: 100%; padding: 10px 0px 10px 10px;  margin-bottom: 15px; outline: none;">
+            </div>
+            <div>
+                <label style="font-weight: bold;">Date of Birth:</label>
+                <input type="date" name="dob" required
+                    style="width: 100%; padding: 10px 0px 10px 10px;  margin-bottom: 15px; outline: none;">
+            </div>
+            <div>
+                <label style="font-weight: bold;">Gender:</label>
+                <select name="gender" style="width: 100%; padding: 10px 0px 10px 10px;  margin-bottom: 15px;">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label style="font-weight: bold;">Address:</label>
+                <textarea name="address" required
+                    style="width: 100%; padding: 10px 0px 10px 10px;  margin-bottom: 15px; outline: none;"></textarea>
+            </div>
+            <div style="display: flex; flex-direction: row; align-items: center; gap: 1rem;">
+                <label style="font-weight: bold;">Courses:</label>
+                <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: row; gap: 1.5rem;">
+                    <li><input type="checkbox" id="math" name="math">
+                        <label for="math">Math</label>
+                    </li>
+                    <li><input type="checkbox" id="science" name="science">
+                        <label for="science">Science</label>
+                    </li>
+                    <li><input type="checkbox" id="history" name="history">
+                        <label for="history">History</label>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <label style="font-weight: bold;">Education Level:</label>
+                <input type="radio" id="highschool" name="education" value="highschool outline: none;">
+                <label for="highschool">High School</label>
+                <input type="radio" id="college" name="education" value="college">
+                <label for="college">College</label>
+                <input type="radio" id="university" name="education" value="university outline: none;">
+                <label for="university">University</label>
+            </div>
+            <button type="submit" value="Register"
+                style="background-color: #4CAF50; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; width: 100%; margin-bottom: 20px; outline: none;">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
