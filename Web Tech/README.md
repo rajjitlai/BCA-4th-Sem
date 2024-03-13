@@ -1,4 +1,4 @@
-# Welcome to NIELIT, BCA 4th Sem Web Practical
+# Welcome Web Practical Repository
 
 This repository contains the code for a website that uses HTML and CSS. The code is well-structured and follows best practices.
 
