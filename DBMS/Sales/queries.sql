@@ -40,4 +40,16 @@ select SNUM, CITY from Salesman where COMISSION > 10;
 -- | 1006 | SPAIN    |
 -- +------+----------+
 
--- 3. 
+-- 3. List of customers excluding those rating <=100 unless they are located in London
+select * from Customer where RATING > 100 or(CITY="LONDON" and RATING <= 100);
+-- Output
+-- +------+---------+--------+--------+------+
+-- | CNUM | CNAME   | CITY   | Rating | SNUM |
+-- +------+---------+--------+--------+------+
+-- | 2001 | Harsh   | London |    100 | 1001 |
+-- | 2002 | Gita    | Rome   |    200 | 1003 |
+-- | 2003 | Lalit   | Surat  |    200 | 1002 |
+-- | 2004 | Govind  | Bombay |    300 | 1002 |
+-- | 2008 | Chirag  | London |    100 | 1001 |
+-- | 2006 | Chinmay | Surat  |    400 | 1007 |
+-- +------+---------+--------+--------+------+
