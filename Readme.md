@@ -33,3 +33,11 @@ Thank you for being a part of our community and for helping us make this project
 
 Happy coding! <br><br>
 <i>Commander</i>
+
+## Contributors
+<table>
+<td><p align="center">Rajjit Laishram  <br><br><img src = "https://avatars.githubusercontent.com/u/131738761?v=4"  height="120" alt="Logeek"></p><p align="center"><a href = "https://github.com/rajjitlai"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36" alt="github-logo"/></a></p></td>
+  
+<td><p align="center"> Shadow Leaked <br><br><img src = "https://avatars.githubusercontent.com/u/127888199?s=400&u=d3dc33664bae2bfcb48af9966a19fe4fc687ca96&v=4"  height="120" alt="Shreyas"></p><p align="center"><a href = "https://github.com/shadow-leaked"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36" alt="github-logo"/></a></p></td>
+
+  </table>
