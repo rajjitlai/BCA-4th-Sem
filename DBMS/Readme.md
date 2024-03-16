@@ -4,11 +4,10 @@ Welcome to the NIELIT BCA 4th Semester DBMS Class Notes Repository! This reposit
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [Code of Conduct](#code-of-conduct)
-- [License](#license)
+- [Customer Database](./Sales/Customer.sql)
+- [Order Database](./Sales/Order.sql)
+- [Queries](./Sales/queries.sql)
+- [Salesman Database](./Sales/Salesman.sql)
 
 ## Introduction
 
