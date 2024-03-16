@@ -6,7 +6,7 @@
 Welcome Contributors!
 Thank you for your interest in contributing to our college project! We value your time and expertise, and we're excited to collaborate with you. Whether you're a seasoned developer or just starting out, there are plenty of opportunities to get involved and make a meaningful impact.
 
-### How to Contribute
+### [How to Contribute](./Shared/contributing_guidelines.md)
 1. Fork the Repository: Start by forking our repository to your own GitHub account.
 2. Clone the Repository: Clone the forked repository to your local machine using Git.
 3. Create a Branch: Create a new branch for your contributions.
