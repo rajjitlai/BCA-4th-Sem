@@ -4,10 +4,11 @@ Welcome to the NIELIT BCA 4th Semester DBMS Class Notes Repository! This reposit
 
 ## Table of Contents
 
-- [Customer Database](./Sales/Customer.sql)
-- [Order Database](./Sales/Order.sql)
-- [Queries](./Sales/queries.sql)
-- [Salesman Database](./Sales/Salesman.sql)
+- Sales: Includes the sales related queries and the commands in separate files.
+    - [Customer Database](./Sales/Customer.sql)
+    - [Order Database](./Sales/Order.sql)
+    - [Queries](./Sales/queries.sql)
+    - [Salesman Database](./Sales/Salesman.sql)
 
 ## Introduction
 
