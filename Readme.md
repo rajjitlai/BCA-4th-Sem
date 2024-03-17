@@ -11,15 +11,34 @@
 Welcome Contributors!
 Thank you for your interest in contributing to our college project! We value your time and expertise, and we're excited to collaborate with you. Whether you're a seasoned developer or just starting out, there are plenty of opportunities to get involved and make a meaningful impact.
 
-### [How to Contribute](./Shared/contributing_guidelines.md)
-1. Fork the Repository: Start by forking our repository to your own GitHub account.
-2. Clone the Repository: Clone the forked repository to your local machine using Git.
-3. Create a Branch: Create a new branch for your contributions.
-4. Make Changes: Work on your assigned tasks or find an area for improvement and start making changes.
-5. Commit Changes: Once you're satisfied with your changes, commit them to your branch.
-6. Push Changes: Push your changes to your forked repository.
-7. Submit a Pull Request: Finally, submit a pull request, and our team will review your contributions.
+### How to Contribute
 
+1. **Fork the Repository:** Start by forking our repository to your own GitHub account.
+
+2. **Clone the Repository:** Clone the forked repository to your local machine using Git.
+
+   ```bash
+   git clone https://github.com/rajjitlai/BCA-4th-Sem.git
+
+3. **Create a Branch:** Create a new branch for your contributions.
+
+    ```bash
+    git checkout -b feature/new-contribution
+
+4. **Make Changes:** Work on your contribution, whether it's adding new class notes, lecture slides, assignments, or other study materials relevant to the NIELIT BCA 4th semester curriculum.
+
+5. **Commit Changes:** Once you're satisfied with your changes, commit them to your branch.
+
+    ```bash
+    git add .
+    git commit -m "Add new class notes: [Your unique message here]" 
+
+6. **Push Changes:** Push your changes to your forked repository.
+
+    ```bash
+    git push origin feature/new-contribution
+
+7. **Submit a Pull Request:** Finally, submit a pull request from your branch to our main repository. Be sure to provide a clear description of your contribution and any relevant information.
 ### Guidelines
 - Please follow the [code of conduct](./Shared/code_of_conduct.md) and adhere to our project's guidelines.
 - If you're working on a new feature, consider opening an issue first to discuss it with the team.
