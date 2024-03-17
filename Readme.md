@@ -1,5 +1,10 @@
 # Welcome to NIELIT, BCA 4th Sem Repository
 
+<hr>
+<div align="center">
+  <img src="./Images/image.jpg" width="auto" alt="C Programming">
+</div>
+<hr>
 
 ## Contributing
 
