@@ -28,16 +28,12 @@ select * from Orders where AMOUNT > 1000;
 -- +------+---------+------------+------+------+
 
 -- List of names and cities of all salesman in London with the commission above 10% 
-select SNUM, CITY from Salesman where COMMISSION > 10;
+select SNUM, CITY from Salesman where CITY = "LONDON" and COMMISSION > 10;
 -- Output
 -- +------+----------+
 -- | SNUM | CITY     |
 -- +------+----------+
 -- | 1001 | LONDON   |
--- | 1003 | MUMBAI   |
--- | 1004 | NEW YORK |
--- | 1005 | BARODA   |
--- | 1006 | SPAIN    |
 -- +------+----------+
 
 -- 3. List of customers excluding those rating <=100 unless they are located in London
