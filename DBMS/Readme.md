@@ -22,8 +22,6 @@ To access the practical notes and resources, navigate through the repository's f
 
 We invite contributions from students and educators to enhance the repository's content and utility. If you have additional class notes, lecture slides, or relevant resources that complement the DBMS course for the NIELIT BCA 4th semester, we encourage you to share them with the community.
 
-To contribute, follow the guidelines outlined in the [Contributing Guidelines](CONTRIBUTING.md). Ensure that your submissions adhere to the formatting standards and contribute positively to the overall learning experience.
-
 ## Code of Conduct
 
 Before contributing to the repository or engaging with other community members, please review and adhere to the [Code of Conduct](../Shared/code_of_conduct.md) to promote a respectful and collaborative environment for learning and knowledge sharing.
