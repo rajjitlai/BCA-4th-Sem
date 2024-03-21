@@ -27,7 +27,7 @@ select * from Orders where AMOUNT > 1000;
 -- | 3011 | 8981.88 | 2021-04-11 | 2011 | 1008 |
 -- +------+---------+------------+------+------+
 
--- List of names and cities of all salesman in London with the commission above 10% 
+-- List of numbers and cities of all salesman in London with the commission above 10% 
 select SNUM, CITY from Salesman where CITY = "LONDON" and COMMISSION > 10;
 -- Output
 -- +------+----------+
