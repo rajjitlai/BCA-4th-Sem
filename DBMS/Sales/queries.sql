@@ -27,7 +27,7 @@ select * from Orders where AMOUNT > 1000;
 -- | 3011 | 8981.88 | 2021-04-11 | 2011 | 1008 |
 -- +------+---------+------------+------+------+
 
--- List of numbers and cities of all salesman in London with the commission above 10% 
+-- 3. List of numbers and cities of all salesman in London with the commission above 10% 
 select SNUM, CITY from Salesman where CITY = "LONDON" and COMMISSION > 10;
 -- Output
 -- +------+----------+
@@ -36,7 +36,7 @@ select SNUM, CITY from Salesman where CITY = "LONDON" and COMMISSION > 10;
 -- | 1001 | LONDON   |
 -- +------+----------+
 
--- 3. List of customers excluding those rating <=100 unless they are located in London
+-- 4. List of customers excluding those rating <=100 unless they are located in London
 select * from Customer where RATING > 100 or(CITY="LONDON" and RATING <= 100);
 -- Output
 -- +------+---------+--------+--------+------+
@@ -50,7 +50,7 @@ select * from Customer where RATING > 100 or(CITY="LONDON" and RATING <= 100);
 -- | 2006 | Chinmay | Surat  |    400 | 1007 |
 -- +------+---------+--------+--------+------+
 
--- 4. List of all orders for more than Rs 1000 except the orders of SNUM < 1006 of 10/03/21
+-- 5. List of all orders for more than Rs 1000 except the orders of SNUM < 1006 of 10/03/21
 select * from Orders where AMOUNT > 1000 and (SNUM >= 1006 or ODATE != '2021-03-10');
 -- Output
 -- +------+---------+------------+------+------+
@@ -65,7 +65,7 @@ select * from Orders where AMOUNT > 1000 and (SNUM >= 1006 or ODATE != '2021-03-
 -- | 3011 | 8981.88 | 2021-04-11 | 2011 | 1008 |
 -- +------+---------+------------+------+------+
 
--- 5. Produce the order no, amount and date of all orders
+-- 6. Produce the order no, amount and date of all orders
 select ONUM, AMOUNT, ODATE from Orders;
 -- Output
 -- +------+---------+------------+
@@ -83,7 +83,7 @@ select ONUM, AMOUNT, ODATE from Orders;
 -- | 3011 | 8981.88 | 2021-04-11 |
 -- +------+---------+------------+
 
--- 6. GIve all the information about all the customer with salesman 1001
+-- 7. GIve all the information about all the customer with salesman 1001
 select * from Customer where SNUM = 1001;
 -- Output
 -- +------+--------+--------+--------+------+
@@ -93,12 +93,12 @@ select * from Customer where SNUM = 1001;
 -- | 2008 | Chirag | London |    100 | 1001 |
 -- +------+--------+--------+--------+------+
 
--- 7. List all the customers whose name starts with A
+-- 8. List all the customers whose name starts with A
 select * from Customer where CNAME like 'A%';
 -- Output (the output will be empty because there is no customer whose name starts with A)
 -- Empty set (0.00 sec)
 
--- 8. List all the customers whose name ends with H
+-- 9. List all the customers whose name ends with H
 select * from Customer where CNAME like '%H';
 -- Output
 -- +------+-------+--------+--------+------+
@@ -107,7 +107,7 @@ select * from Customer where CNAME like '%H';
 -- | 2001 | Harsh | London |    100 | 1001 |
 -- +------+-------+--------+--------+------+
 
--- 9. List all the customers whose name begins with letter A to G
+-- 10. List all the customers whose name begins with letter A to G
 select * from Customer where left(CNAME, 1) between 'A' and 'G';
 -- Output
 -- +------+---------+--------+--------+------+
