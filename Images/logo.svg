@@ -1,0 +1,7 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="90" stroke="#38ff42" stroke-width="3" fill="none" />
+    <text x="50%" y="50%" font-family="Times Now Roman" font-size="20" fill="white" text-anchor="middle" dy=".3em">RJ'S
+        BLOG    
+    </text>
+    <circle cx="152" cy="103" r="2" fill="#38ff42" />
+</svg>
