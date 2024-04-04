@@ -38,7 +38,7 @@ select * from Orders;
 
 -- Q3. Produce the order no. in ascending orders/descending orders
 -- Ascending
-select ONUM from Orders order by onum asc;
+select ONUM from Orders order by ONUM asc;
 -- Output
 -- +------+
 -- | ONUM |
@@ -57,7 +57,7 @@ select ONUM from Orders order by onum asc;
 -- | 3011 |
 -- +------+
 -- Descending
-select ONUM from Orders order by onum desc;
+select ONUM from Orders order by ONUM desc;
 -- Output
 -- +------+
 -- | ONUM |
@@ -77,7 +77,7 @@ select ONUM from Orders order by onum desc;
 -- +------+
 
 -- Q4. Update the AMOUNT values as 111.1 where ONUM=3003
-update Orders set Amount=111.1 where onum=3003;
+update Orders set AMOUNT=111.1 where ONUM=3003;
 select * from Orders;
 -- Output
 -- +------+---------+------------+------+------+
@@ -99,7 +99,7 @@ select * from Orders;
 
 -- Q5. Show all the data from Order_Table where ONUM is not NULL
 -- or Q6. Produce the table where ONUM is not equal NULL
-select * from Orders where onum!="null";
+select * from Orders where ONUM!="null";
 -- Output
 -- +------+---------+------------+------+------+
 -- | ONUM | AMOUNT  | ODATE      | CNUM | SNUM |
@@ -117,7 +117,7 @@ select * from Orders where onum!="null";
 -- +------+---------+------------+------+------+
 
 -- Q7. Produce ONUM values where CNUM values is equal to 2009 or 2015 or 2019
-select * from Orders where onum!="null";
+select * from Orders where ONUM!="null";
 -- Output
 -- +------+---------+------------+------+------+
 -- | ONUM | AMOUNT  | ODATE      | CNUM | SNUM |
@@ -134,7 +134,7 @@ select * from Orders where onum!="null";
 -- | 3011 | 8981.88 | 2021-04-11 | 2011 | 1008 |
 -- +------+---------+------------+------+------+
 
-select onum from Orders where Cnum=2009 or Cnum=2015 or Cnum=2019;
+select ONUM from Orders where CNUM=2009 or CNUM=2015 or CNUM=2019;
 -- +------+
 -- | onum |
 -- +------+
