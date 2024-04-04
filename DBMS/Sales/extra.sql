@@ -1,4 +1,6 @@
+-- Q1. Write the queries to produce order no., amount and date of all orders
 select ONUM, AMOUNT, ODATE from Orders;
+-- Output
 -- +------+---------+------------+
 -- | ONUM | AMOUNT  | ODATE      |
 -- +------+---------+------------+
@@ -14,8 +16,10 @@ select ONUM, AMOUNT, ODATE from Orders;
 -- | 3011 | 8981.88 | 2021-04-11 |
 -- +------+---------+------------+
 
+-- Q2. Insert the row into orders table where all the rows data/values should be null (use the default values keyword)
 insert into Orders values (DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT);
 select * from Orders;
+-- Output
 -- +------+---------+------------+------+------+
 -- | ONUM | AMOUNT  | ODATE      | CNUM | SNUM |
 -- +------+---------+------------+------+------+
@@ -32,25 +36,10 @@ select * from Orders;
 -- | NULL |    NULL | NULL       | NULL | NULL |
 -- +------+---------+------------+------+------+
 
-select ONUM from Orders order by onum desc;
--- +------+
--- | ONUM |
--- +------+
--- | 3011 |
--- | 3010 |
--- | 3009 |
--- | 3008 |
--- | 3007 |
--- | 3006 |
--- | 3005 |
--- | 3003 |
--- | 3002 |
--- | 3001 |
--- | NULL |
--- | NULL |
--- +------+
-
+-- Q3. Produce the order no. in ascending orders/descending orders
+-- Ascending
 select ONUM from Orders order by onum asc;
+-- Output
 -- +------+
 -- | ONUM |
 -- +------+
@@ -67,9 +56,30 @@ select ONUM from Orders order by onum asc;
 -- | 3010 |
 -- | 3011 |
 -- +------+
+-- Descending
+select ONUM from Orders order by onum desc;
+-- Output
+-- +------+
+-- | ONUM |
+-- +------+
+-- | 3011 |
+-- | 3010 |
+-- | 3009 |
+-- | 3008 |
+-- | 3007 |
+-- | 3006 |
+-- | 3005 |
+-- | 3003 |
+-- | 3002 |
+-- | 3001 |
+-- | NULL |
+-- | NULL |
+-- +------+
 
+-- Q4. Update the AMOUNT values as 111.1 where ONUM=3003
 update Orders set Amount=111.1 where onum=3003;
 select * from Orders;
+-- Output
 -- +------+---------+------------+------+------+
 -- | ONUM | AMOUNT  | ODATE      | CNUM | SNUM |
 -- +------+---------+------------+------+------+
@@ -87,7 +97,10 @@ select * from Orders;
 -- | NULL |    NULL | NULL       | NULL | NULL |
 -- +------+---------+------------+------+------+
 
+-- Q5. Show all the data from Order_Table where ONUM is not NULL
+-- or Q6. Produce the table where ONUM is not equal NULL
 select * from Orders where onum!="null";
+-- Output
 -- +------+---------+------------+------+------+
 -- | ONUM | AMOUNT  | ODATE      | CNUM | SNUM |
 -- +------+---------+------------+------+------+
@@ -103,7 +116,9 @@ select * from Orders where onum!="null";
 -- | 3011 | 8981.88 | 2021-04-11 | 2011 | 1008 |
 -- +------+---------+------------+------+------+
 
+-- Q7. Produce ONUM values where CNUM values is equal to 2009 or 2015 or 2019
 select * from Orders where onum!="null";
+-- Output
 -- +------+---------+------------+------+------+
 -- | ONUM | AMOUNT  | ODATE      | CNUM | SNUM |
 -- +------+---------+------------+------+------+
