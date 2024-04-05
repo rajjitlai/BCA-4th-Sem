@@ -11,6 +11,11 @@
 Welcome Contributors!
 Thank you for your interest in contributing to our college project! We value your time and expertise, and we're excited to collaborate with you. Whether you're a seasoned developer or just starting out, there are plenty of opportunities to get involved and make a meaningful impact.
 
+## Table of Contents
+- [Web Practical](./Web%20Tech/)
+- [Web Dev](./Web%20Dev/)
+- [DBMS](./DBMS/)
+
 ### How to Contribute
 
 1. **Fork the Repository:** Start by forking our repository to your own GitHub account.
