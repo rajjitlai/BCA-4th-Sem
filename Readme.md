@@ -13,7 +13,7 @@ Thank you for your interest in contributing to our college project! We value you
 
 ## Table of Contents
 - [Web Practical](./Web%20Tech/)
-- [Web Dev](./Web%20Dev/)
+- [Web Dev](./Web%20Dev/) - Miss Karuna Project (VAC)
 - [DBMS](./DBMS/)
 
 ### How to Contribute
