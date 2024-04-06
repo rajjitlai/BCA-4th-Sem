@@ -1,5 +1,8 @@
 # Welcome Web Development Repository
 
+## Important Notice
+1. Write the basic html code of your website without any css included and to put the screenshot in the docx. (Last date: 06/04/2024)
+
 ## Format for project report
 1. Cover Page
 2. Declaration
