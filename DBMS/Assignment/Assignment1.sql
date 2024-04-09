@@ -40,6 +40,15 @@ FROM Employee e
 JOIN Department d ON e.dept_id = d.dept_id
 WHERE e.name LIKE 'R%' AND d.dname = 'Research';
 
+-- Output
++--------+
+|  name  |
++--------+
+| Rachel |
+| Richard|
+|  Rita  |
++--------+
+
 -- ii) Retrieve the number of employees working in each department. The result should be in ascending order of the number of employees
 SELECT d.dname, COUNT(e.eid) AS num_employees
 FROM Department d
@@ -47,10 +56,31 @@ LEFT JOIN Employee e ON d.dept_id = e.dept_id
 GROUP BY d.dname
 ORDER BY num_employees ASC;
 
+-- Output
++-----------------+---------------+
+|     dname       | num_employees |
++-----------------+---------------+
+| Human Resources |       1       |
+|  Sales          |       2       |
+| Development     |       3       |
+| Research        |       4       |
++-----------------+---------------+
+
 -- iii) Retrieve the name of all employees whose salary is greater than the salary of all the employees in department number 5
 SELECT e.name
 FROM Employee e
 WHERE e.salary > (SELECT MAX(salary) FROM Employee WHERE dept_id = 5);
+
+-- Output
++--------+
+|  name  |
++--------+
+| Robert |
+| Rebecca|
+| Ryan   |
+| Rita   |
+| Laura  |
++--------+
 
 -- iv) Find the average salary of all the employees of the Research Department as well as the maximum salary and minimum salary in the department
 SELECT 
@@ -61,6 +91,13 @@ FROM Employee e
 JOIN Department d ON e.dept_id = d.dept_id
 WHERE d.dname = 'Research';
 
+-- Output
++-------------+-------------+-------------+
+| avg_salary | max_salary  | min_salary  |
++-------------+-------------+-------------+
+|   56250.00 |   58000.00  |   50000.00  |
++-------------+-------------+-------------+
+
 -- v) For each department, retrieve the department name, total salary, and average salary
 SELECT 
   d.dname,
@@ -69,3 +106,13 @@ SELECT
 FROM Department d
 LEFT JOIN Employee e ON d.dept_id = e.dept_id
 GROUP BY d.dname;
+
+-- Output
++------------------+---------------+-------------+
+|      dname       | total_salary  | avg_salary  |
++------------------+---------------+-------------+
+| Human Resources  |   50000.00    |  50000.00   |
+| Sales            |   106000.00   |  53000.00   |
+| Development      |   175000.00   |  58333.33   |
+| Research         |   222000.00   |  55500.00   |
++------------------+---------------+-------------+
