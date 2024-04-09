@@ -10,6 +10,10 @@ Welcome to the NIELIT BCA 4th Semester DBMS Class Notes Repository! This reposit
     - [Queries](./Sales/queries.sql)
     - [Salesman Database](./Sales/Salesman.sql)
 
+## Assignment
+
+- [Assignment-1](./Assignment/Assignment1.sql)
+
 ## Introduction
 
 This repository serves as a centralized hub for accessing practical notes and resources for the DBMS course offered in the NIELIT BCA 4th semester curriculum. Whether you're attending lectures, preparing for exams, or revising concepts, you'll find comprehensive resources here to support your learning journey.
