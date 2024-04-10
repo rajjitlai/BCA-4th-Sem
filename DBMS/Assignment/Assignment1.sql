@@ -92,11 +92,11 @@ JOIN Department d ON e.dept_id = d.dept_id
 WHERE d.dname = 'Research';
 
 -- Output
-+-------------+-------------+-------------+
-| avg_salary | max_salary  | min_salary  |
-+-------------+-------------+-------------+
-|   56250.00 |   58000.00  |   50000.00  |
-+-------------+-------------+-------------+
++-------------+-------------+------------+
+| avg_salary  | max_salary  | min_salary |
++-------------+-------------+------------+
+|   56250.00  |   58000.00  |   50000.00 |
++-------------+-------------+------------+
 
 -- v) For each department, retrieve the department name, total salary, and average salary
 SELECT 
