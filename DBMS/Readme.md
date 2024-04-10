@@ -3,16 +3,20 @@
 Welcome to the NIELIT BCA 4th Semester DBMS Class Notes Repository! This repository is dedicated to storing and sharing practical notes and resources related to Database Management Systems (DBMS) for students enrolled in the NIELIT Bachelor of Computer Applications (BCA) program, 4th semester.
 
 ## Table of Contents
-
 - Sales: Includes the sales related queries and the commands in separate files.
+
+    ### Database
     - [Customer Database](./Sales/Customer.sql)
     - [Order Database](./Sales/Order.sql)
-    - [Queries](./Sales/queries.sql)
     - [Salesman Database](./Sales/Salesman.sql)
 
-## Assignment
+    ### Practical
+    - [Practical 1](./Sales/queries.sql)
+    - [Practical 2](./Sales/extra.sql)
+    - [Practical 3](./Practical%20List-1.sql)
 
-- [Assignment-1](./Assignment/Assignment1.sql)
+    ### Assignment
+    - [Assignment-1](./Assignment/Assignment1.sql)
 
 ## Introduction
 
