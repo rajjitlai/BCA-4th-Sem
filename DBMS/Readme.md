@@ -11,9 +11,9 @@ Welcome to the NIELIT BCA 4th Semester DBMS Class Notes Repository! This reposit
     - [Salesman Database](./Sales/Salesman.sql)
 
     ### Practical
-    - [Practical 1](./Sales/queries.sql)
-    - [Practical 2](./Sales/extra.sql)
-    - [Practical 3](./Practical%20List-1.sql)
+    - [Practical 1](./Practical/Practical%201.sql)
+    - [Practical 2](./Practical/Practical%202.sql)
+    - [Practical 3](./Practical/Practical%203.sql)
 
     ### Assignment
     - [Assignment-1](./Assignment/Assignment1.sql)
