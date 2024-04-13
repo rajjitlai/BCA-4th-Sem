@@ -26,9 +26,20 @@ select * from Customer where SNUM = 1001;
 -- | 2008 | Chirag | London |    100 | 1001 |
 -- +------+--------+--------+--------+------+
 
--- 3. Display the following information in the order of CITY, SNAME, Snum, and  Commission
+-- 3. Display the following information in the order of CITY, SNAME, SNUM, and  Commission
 
+select CITY, SNAME, SNUM, COMMISSION from Salesman;
 --Output
+-- +-----------+---------+------+------------+
+-- | CITY      | SNAME   | SNUM | COMMISSION |
+-- +-----------+---------+------+------------+
+-- | LONDON    | RAM     | 1001 | 14         |
+-- | NEW DELHI | ANAND   | 1002 | 10         |
+-- | MUMBAI    | SHYAM   | 1003 | 13         |
+-- | NEW YORK  | MOTILAL | 1004 | 11         | 
+-- | BARODA    | PIYUSH  | 1005 | 15         |
+-- | SPAIN     | SEJAL   | 1006 | 12         |
+-- + ----------+---------+------+------------+
 
 -- 4. List of rating followed by the name of each customer in Surat
 select RATING, CNAME from Customer where CITY="SURAT";
@@ -42,11 +53,53 @@ select RATING, CNAME from Customer where CITY="SURAT";
 
 -- 5. List of SNUM of all salesman with order in order table without any duplicates.
 
---Output
+select distinct SNUM from Orders order by SNUM asc;
+-- Output
+-- +------+
+-- | SNUM |
+-- +------+
+-- | 1002 |
+-- | 1004 |
+-- | 1005 |
+-- | 1006 |
+-- | 1007 |
+-- | 1008 |
+-- +------+
 
 -- 6. List of all orders for more than Rs. 1000. List of names and cities of all salesman in London with commission above 10%. List all customers excluding those with rating <= 100 unless the are located in Located in London.
 
+select * from Orders where AMOUNT > 1000;
 --Output
+-- +------+---------+------------+------+------+
+-- | ONUM | AMOUNT  | ODATE      | CNUM | SNUM |
+-- +------+---------+------------+------+------+
+-- | 3002 | 1800.21 | 2021-03-01 | 2019 | 1004 |
+-- | 3005 | 1650.54 | 2021-03-01 | 2018 | 1002 |
+-- | 3006 | 1808.61 | 2021-03-01 | 2016 | 1005 |
+-- | 3009 | 1719.32 | 2021-04-10 | 2013 | 1008 |
+-- | 3008 | 7433.00 | 2021-04-11 | 2020 | 1005 |
+-- | 3010 | 3108.59 | 2021-04-11 | 2012 | 1002 |
+-- | 3011 | 8981.88 | 2021-04-11 | 2011 | 1008 |
+-- +------+---------+------------+------+------+
+select SNUM, CITY from Salesman where CITY = "LONDON" and COMMISSION > 10;
+-- Output
+-- +------+----------+
+-- | SNUM | CITY     |
+-- +------+----------+
+-- | 1001 | LONDON   |
+-- +------+----------+
+select * from Customer where RATING > 100 or(CITY="LONDON" and RATING <= 100);
+-- Output
+-- +------+---------+--------+--------+------+
+-- | CNUM | CNAME   | CITY   | Rating | SNUM |
+-- +------+---------+--------+--------+------+
+-- | 2001 | Harsh   | London |    100 | 1001 |
+-- | 2002 | Gita    | Rome   |    200 | 1003 |
+-- | 2003 | Lalit   | Surat  |    200 | 1002 |
+-- | 2004 | Govind  | Bombay |    300 | 1002 |
+-- | 2008 | Chirag  | London |    100 | 1001 |
+-- | 2006 | Chinmay | Surat  |    400 | 1007 |
+-- +------+---------+--------+--------+------+
 
 -- 7. List all orders for more than Rs. 1000 except the orders of snum<1006 of 10/03/21.
 

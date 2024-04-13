@@ -18,4 +18,3 @@ select * from Salesman;
 -- | 1005 | PIYUSH  | BARODA    |        15 |
 -- | 1006 | SEJAL   | SPAIN     |        12 |
 -- +------+---------+-----------+-----------+
-
