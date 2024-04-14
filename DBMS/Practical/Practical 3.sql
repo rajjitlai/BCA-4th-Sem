@@ -102,12 +102,24 @@ select * from Customer where RATING > 100 or(CITY="LONDON" and RATING <= 100);
 -- +------+---------+--------+--------+------+
 
 -- 7. List all orders for more than Rs. 1000 except the orders of snum<1006 of 10/03/21.
-
+select * from Orders where AMOUNT > 1000 and (SNUM >=1006 or ODATE != '01/10/2021');
 --Output
+-- +------+---------+------------+------+------+
+-- | ONUM | AMOUNT  | ODATE      | CNUM | SNUM |
+-- +------+---------+------------+------+------+
+-- | 3002 | 1800.21 | 2021-03-01 | 2019 | 1004 |
+-- | 3005 | 1650.54 | 2021-03-01 | 2018 | 1002 |
+-- | 3006 | 1808.61 | 2021-03-01 | 2016 | 1005 |
+-- | 3008 | 7433.00 | 2021-04-11 | 2020 | 1005 |
+-- | 3009 | 1719.32 | 2021-04-10 | 2013 | 1008 |
+-- | 3010 | 3108.59 | 2021-04-11 | 2012 | 1002 |
+-- | 3011 | 8981.88 | 2021-04-11 | 2011 | 1008 |
+-- +------+---------+------------+------+------+
 
--- 8. List all orders taken on October 3rd or 4th or 6th, 2028.
-
+-- 8. List all orders taken on October 3rd or 4th or 6th, 2008.
+select * from Orders where ODATE = '03/10/2008' OR ODATE = '04/10/2008' OR ODATE = '06/10/2008';
 --Output
+-- Empty set, 3 warnings (0.001 sec)
 
 -- 9. List all customers whose names begins with letter 'A'
 select * from Customer where CNAME like 'A%';
@@ -127,5 +139,6 @@ select * from Customer where left(CNAME, 1) between 'A' and 'G';
 -- +------+---------+--------+--------+------+
 
 -- 11. List all orders with zero or NULL amount.
-
+select * from Orders where AMOUNT = 0 or AMOUNT is NULL;
 --Output
+-- Empty set (0.000 sec)
