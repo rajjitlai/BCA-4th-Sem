@@ -13,7 +13,7 @@ Welcome to the NIELIT BCA 4th Semester DBMS Class Notes Repository! This reposit
     ### Practical
     - [Practical 1](./Practical/Practical%201.sql)
     - [Practical 2](./Practical/Practical%202.sql)
-    - [Practical 3](./Practical/Practical%203.sql)
+    - [Practical 3](./Practical/Practical%203.sql) - Syllabus Practical-1
 
     ### Assignment
     - [Assignment-1](./Assignment/Assignment-1.sql)

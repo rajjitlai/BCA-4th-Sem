@@ -27,7 +27,6 @@ select * from Customer where SNUM = 1001;
 -- +------+--------+--------+--------+------+
 
 -- 3. Display the following information in the order of CITY, SNAME, SNUM, and  Commission
-
 select CITY, SNAME, SNUM, COMMISSION from Salesman;
 --Output
 -- +-----------+---------+------+------------+
@@ -52,7 +51,6 @@ select RATING, CNAME from Customer where CITY="SURAT";
 -- +--------+---------+
 
 -- 5. List of SNUM of all salesman with order in order table without any duplicates.
-
 select distinct SNUM from Orders order by SNUM asc;
 -- Output
 -- +------+
@@ -67,7 +65,6 @@ select distinct SNUM from Orders order by SNUM asc;
 -- +------+
 
 -- 6. List of all orders for more than Rs. 1000. List of names and cities of all salesman in London with commission above 10%. List all customers excluding those with rating <= 100 unless the are located in Located in London.
-
 select * from Orders where AMOUNT > 1000;
 --Output
 -- +------+---------+------------+------+------+
