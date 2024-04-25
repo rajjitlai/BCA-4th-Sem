@@ -1,5 +1,8 @@
--- Q.1 List of Salesman with their % of Commission
+Date: 18/04/2024
+-- Quesries before performing any sql commands
 alter table Salesman modify COLUMN COMMISSION varchar(20);
+
+-- Q.1 List of Salesman with their % of COMMISSION
 update Salesman set COMMISSION = concat(COMMISSION, "%");
 select * from Salesman;
 
@@ -70,3 +73,56 @@ select CNAME from Customer where SNUM in (select SNUM from Salesman where COMMIS
 -- | Gita   |
 -- | Chirag |
 -- +--------+
+
+Date: 25/04/24
+
+5) Display the number of Orders for each day
+--
+select ODATE, COUNT(ODATE) as Num_Orders from Orders group by ODATE;
++------------+------------+
+| ODATE      | Num_Orders |
++------------+------------+
+| 2021-03-01 |          5 |
+| 2021-04-10 |          2 |
+| 2021-04-11 |          3 |
++------------+------------+
+--
+
+6) Display the number of Orders for each day in descending Orders of the number of orders in the following format: For dd-mm-yy, there are ___ orders
+--
+select DATE_FORMAT(ODATE, "%d-%m-%y") as For_day, Count(ONUM) as No_orders from Orders group by ODATE order by No_orders desc;
++----------+-----------+
+| For_day  | No_orders |
++----------+-----------+
+| 01-03-21 |         5 |
+| 11-04-21 |         3 |
+| 10-04-21 |         2 |
++----------+-----------+
+--
+
+7) Display on which date, customer "Lalit"has placed an order
+--
+-- update Orders set CNUM = 2003 where ONUM = 3003;
+
+--
+
+8) Display the customer number and name of the cutomer who has placed an order of amount 686.91
+(Notes: add a arow in a customer whose CNUM should be 2014, Name is Mohan, City is Manipur, Rating is 500, SNUM is 1006)
+--
+insert into Customer values(2014, "Mohan", "Manipur", 500, 1006);
+--
+select CNUM, CNAME from Customer where CNUM in (select CNUM from Orders where AMOUNT =  676.91);
++------+-------+
+| CNUM | CNAME |
++------+-------+
+| 2003 | Lalit |
++------+-------+
+--
+
+9) Display the maximum amount of each day
+(Notes: add all the rows of orders table, refer to page 25-26 of DBMS syllabus)
+--
+
+--
+
+10) Display the Order Number where the Customer has placed maxmimum amount Order
