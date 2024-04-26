@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blinking effect</title>
+    <style>
+        .notice{
+            animation: noticeBlink 1s step-start infinite;
+        }
+
+        @keyframes noticeBlink{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="align-items: center;">
+        <h2>Important Message</h2>
+        <p class="notice" style="color: red; font-size: 30px;">
+            Feel free to contact me anytime
+        </p>
+    </div>
+</body>
+</html>
