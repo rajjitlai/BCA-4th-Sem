@@ -1,27 +1,39 @@
 <!-- Practical 5 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Different Lines</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container p{
+            font-size: 25px;
+            border-bottom: 2px solid #000;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <center style="font-size: 30px;">
+    <div class="container">
         <p style="color: red;">1. The first line is red</p>
-        <hr>
         <p style="color: blue;">2. The second line is blue in color</p>
-        <hr>
         <p style="color: lightgreen;">3. The third line is lightgreen in color</p>
-        <hr>
         <p style="color: gray;">4. The fourth line is gray in color</p>
-        <hr>
         <p style="color: goldenrod;">5. The fifth line is goldenrod in color</p>
-        <hr>
         <p style="color: brown;">6. The sixth line is brown in color</p>
-        <hr>
         <p style="color: yellow;">7. The seventh line is yellow in color</p>
-        <hr>
-    </center>
+    </div>
 </body>
+
 </html>
