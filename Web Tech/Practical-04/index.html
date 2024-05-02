@@ -10,18 +10,29 @@
 
     <!-- blinking effect-->
     <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
         .blink {
             animation: blink 1s step-start infinite;
         }
 
         @keyframes blink {
-            0%{
+            0% {
                 opacity: 0;
             }
-            50%{
+
+            50% {
                 opacity: 1;
             }
-            100%{
+
+            100% {
                 opacity: 0;
             }
         }
@@ -29,25 +40,23 @@
 </head>
 
 <body>
-    <center>
+    <div class="container">
         <h1 style="color: blue;">Imphal</h1>
         <h2>Landmarks in the Imphal City</h2>
-        <ul style="list-style: none;">
-            <li style="color: green; font-style: italic; font-weight: bold; font-size: 20px">1. Kangla Palace, Ancient
+        <ol>
+            <li style="color: green; font-style: italic; font-weight: bold; font-size: 20px">Kangla Palace, Ancient
                 Capital of Manipur</li>
-            <li style="color: purple; font-style: unset; font-weight: normal; font-size: 22px">2. Khongjom War Memorial
+            <li style="color: purple; font-style: unset; font-weight: normal; font-size: 22px">Khongjom War Memorial
                 Complex</li>
-            <li style="color: red; font-style: initial; font-weight: bold; font-size: 22px">3. Imphal War Cemetry</li>
-            <li style="color: goldenrod; font-style: normal; font-weight: bolder; font-size: 20px">
-                <span class="blink">
-                    4. NIELIT Imphal, Akampat
-                </span>
+            <li style="color: red; font-style: initial; font-weight: bold; font-size: 22px">Imphal War Cemetry</li>
+            <li class="blink" style="color: goldenrod; font-style: normal; font-weight: bolder; font-size: 20px">
+                NIELIT Imphal, Akampat
             </li>
-        </ul>
-        <marquee behavior="srcoll" direction="left">
+        </ol>
+        <marquee behavior="srcoll" direction="left" style="margin-top: 5%;">
             These are some of the most popular Landmarks in the Imphal City
         </marquee>
-    </center>
+        </con>
 </body>
 
 </html>
