@@ -7,8 +7,45 @@
 body{
     width: 100%;
     height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .card{
+    max-width: 380px;
+    width: 100%;
+}
+
+.container .card div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container label{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container input{
+    padding: 10px;
+    outline: none;
+}
+
+.container button{
+    margin-top: 30px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #313131;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
 }

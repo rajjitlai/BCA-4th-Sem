@@ -20,15 +20,22 @@
 
 <body>
     <div class="container">
-        <label for="principal">Principal Amount:</label>
-        <input type="number" id="principal" placeholder="Enter principal amount" required><br>
-        
-        <label for="rate">Rate of Interest (%):</label>
-        <input type="number" id="rate" placeholder="Enter rate of interest" required><br>
-        
-        <label for="duration">Duration (in years):</label>
-        <input type="number" id="duration" placeholder="Enter duration in years" required><br>
-        
+        <div class="card">
+            <div>
+                <label for="principal">Principal Amount:</label>
+                <input type="number" id="principal" placeholder="Enter principal amount" required><br>
+            </div>
+
+            <div>
+                <label for="rate">Rate of Interest (%):</label>
+                <input type="number" id="rate" placeholder="Enter rate of interest" required><br>
+            </div>
+
+            <div>
+                <label for="duration">Duration (in years):</label>
+                <input type="number" id="duration" placeholder="Enter duration in years" required><br>
+            </div>
+        </div>
         <button onclick="calculateSimpleInterest()">Calculate</button>
     </div>
 </body>
