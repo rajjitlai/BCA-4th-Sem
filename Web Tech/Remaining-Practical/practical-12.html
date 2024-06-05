@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS code to print Factorial</title>
+</head>
+
+<body style="text-align: center;">
+    <h1>Find the factorial of any number by entering: </h1>
+    <div style="margin-top: 30px;">
+        <p style="font-size: 30px; font-weight: 600;">Enter a number: </p>
+        <input type="number" id="num" style="padding: 10px; outline: none; font-size: 20px; font-weight: 400;">
+        <br><br>
+        <button onclick="fact()" style="padding: 10px;">Factorial</button>
+        <br>
+        <p id="res" style="font-size: 22px; font-weight: 600;"></p>
+    </div>
+
+    <script>
+        function fact() {
+            var num = document.getElementById("num").value;
+            var fact = 1;
+            for (var i = 1; i <= num; i++) {
+                fact = fact * i;
+            }
+            document.getElementById("res").innerHTML = "The factorial of " + num + " is: " + fact;
+        }
+    </script>
+</body>
+
+</html>
