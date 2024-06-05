@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function calculateSimpleInterest() {
+            const principal = parseFloat(document.getElementById("principal").value);
+            const rate = parseFloat(document.getElementById("rate").value);
+            const duration = parseFloat(document.getElementById("duration").value);
+
+            const simpleInterest = (principal * rate * duration) / 100;
+            alert(`Simple Interest: ${simpleInterest.toFixed(2)}`);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <label for="principal">Principal Amount:</label>
+        <input type="number" id="principal" placeholder="Enter principal amount" required><br>
+        
+        <label for="rate">Rate of Interest (%):</label>
+        <input type="number" id="rate" placeholder="Enter rate of interest" required><br>
+        
+        <label for="duration">Duration (in years):</label>
+        <input type="number" id="duration" placeholder="Enter duration in years" required><br>
+        
+        <button onclick="calculateSimpleInterest()">Calculate</button>
+    </div>
+</body>
+
+</html>
