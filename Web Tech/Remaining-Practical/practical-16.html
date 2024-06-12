@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-16</title>
+</head>
+
+<body>
+    <h1>JavaScript Functions Example</h1>
+    <button onclick="redirectTo('https://www.example.com')">Redirect to Example.com</button>
+    <button onclick="openPopup('https://www.example.com', 'Example Popup', 600, 400)">Open Popup</button>
+    <button onclick="printPage()">Print Page</button>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+
+        function openPopup(url, title, width, height) {
+            const left = (screen.width / 2) - (width / 2);
+            const top = (screen.height / 2) - (height / 2);
+            window.open(url, title, `width=${width},height=${height},top=${top},left=${left}`);
+        }
+
+        function printPage() {
+            window.print();
+        }
+    </script>
+</body>
+
+</html>
