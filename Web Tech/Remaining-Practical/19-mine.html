@@ -4,52 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical-19</title>
+    <title>Practical 19 - Mine (Styling)</title>
+    <!-- custom styling -->
     <link rel="stylesheet" href="css/19style.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="formContainer">
-            <form>
-                <div>
-                    <div>
-                        <label for="firstName">First Name:</label>
-                        <input type="text" placeholder="First Name" required>
-                    </div>
-                    <span></span>
-                </div>
-                <div>
-                    <label for="lasttName">Last Name:</label>
-                    <input type="text" placeholder="Last Name" required>
-                    <span></span>
-                </div>
-                <div>
-                    <label for="email">Email ID:</label>
-                    <input type="email" placeholder="example@gmail.com" required>
-                    <span></span>
-                </div>
-                <div>
-                    <label for="user">User ID:</label>
-                    <input type="text" placeholder="username" required>
-                    <span></span>
-                </div>
-                <div>
-                    <label for="password">Password:</label>
-                    <input type="password" placeholder="********" required>
-                    <span></span>
-                </div>
-                <div>
-                    <label for="password">Confirm Password:</label>
-                    <input type="password" placeholder="********" required>
-                    <span></span>
-                </div>
-
-                <button type="submit">Submit</button>
-            </form>
+        <div class="header">
+            <h2>Your Information</h2>
         </div>
+        <form action="" class="form" id="form">
+            <div class="form-input">
+                <label for="FirstName">First Name</label>
+                <input type="text" placeholder="First Name" id="firstName">
+                <small></small>
+            </div>
+            <div class="form-input">
+                <label for="LastName">Last Name</label>
+                <input type="text" placeholder="Last Name" id="lastName">
+                <small></small>
+            </div>
+            <div class="form-input">
+                <label for="EmailId">Email</label>
+                <input type="email" placeholder="example@gmail.com" id="email">
+                <small></small>
+            </div>
+            <div class="form-input">
+                <label for="UserId">User ID</label>
+                <input type="email" placeholder="User ID" id="username">
+                <small></small>
+            </div>
+            <div class="form-input">
+                <label for="Password">Password</label>
+                <input type="password" placeholder="Password" id="password">
+                <small></small>
+            </div>
+            <div class="form-input">
+                <label for="Password Check">Confirm Password</label>
+                <input type="password" placeholder="Password" id="passwordCheck">
+                <small></small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
+    <!-- JS code for validation -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
