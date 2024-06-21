@@ -1,0 +1,54 @@
+<!-- Create  a  sample  form  program  that  collects  the  first  name,  last  name,  email,  user  id, 
+password  and  confirms  password  from  the  user.  All  the  inputs  are  mandatory  and 
+email  address  entered  should  be  in  correct  format.  Also,  the  values  entered  in  the 
+password and confirm password textboxes should be the same. After validating using 
+JavaScript,  in  output  display  proper  error  messages  in  red  color  just  next  to  the 
+textbox where there is an error.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-19</title>
+</head>
+
+<body>
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" placeholder="First Name" required>
+        <span></span>
+        <br>
+        
+        <label for="lasttName">Last Name:</label>
+        <input type="text" placeholder="Last Name" required>
+        <span></span>
+        <br>
+        
+        <label for="email">Email ID:</label>
+        <input type="email" placeholder="example@gmail.com" required>
+        <span></span>
+        <br>
+        
+        <label for="user">User ID:</label>
+        <input type="text" placeholder="username" required>
+        <span></span>
+        <br>
+        
+        <label for="password">Password:</label>
+        <input type="password" placeholder="********" required>
+        <span></span>
+        <br>
+
+        <label for="password">Confirm Password:</label>
+        <input type="password" placeholder="********" required>
+        <span></span>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
