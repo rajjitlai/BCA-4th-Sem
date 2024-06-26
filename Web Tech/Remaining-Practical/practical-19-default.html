@@ -1,54 +1,109 @@
-<!-- Create  a  sample  form  program  that  collects  the  first  name,  last  name,  email,  user  id, 
-password  and  confirms  password  from  the  user.  All  the  inputs  are  mandatory  and 
-email  address  entered  should  be  in  correct  format.  Also,  the  values  entered  in  the 
-password and confirm password textboxes should be the same. After validating using 
-JavaScript,  in  output  display  proper  error  messages  in  red  color  just  next  to  the 
-textbox where there is an error.  -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical-19</title>
+    <title>Form Validation</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
-    <form>
+    <form id="registrationForm">
         <label for="firstName">First Name:</label>
-        <input type="text" placeholder="First Name" required>
-        <span></span>
-        <br>
-        
-        <label for="lasttName">Last Name:</label>
-        <input type="text" placeholder="Last Name" required>
-        <span></span>
-        <br>
-        
-        <label for="email">Email ID:</label>
-        <input type="email" placeholder="example@gmail.com" required>
-        <span></span>
-        <br>
-        
-        <label for="user">User ID:</label>
-        <input type="text" placeholder="username" required>
-        <span></span>
-        <br>
-        
-        <label for="password">Password:</label>
-        <input type="password" placeholder="********" required>
-        <span></span>
+        <input type="text" id="firstName" placeholder="First Name" >
+        <span class="error" id="firstNameError"></span>
         <br>
 
-        <label for="password">Confirm Password:</label>
-        <input type="password" placeholder="********" required>
-        <span></span>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" placeholder="Last Name" >
+        <span class="error" id="lastNameError"></span>
+        <br>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" placeholder="example@gmail.com" >
+        <span class="error" id="emailError"></span>
+        <br>
+
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" placeholder="username" >
+        <span class="error" id="userIdError"></span>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="********" >
+        <span class="error" id="passwordError"></span>
+        <br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" placeholder="********" >
+        <span class="error" id="confirmPasswordError"></span>
         <br>
 
         <button type="submit">Submit</button>
     </form>
 
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            let hasError = false;
+
+            document.querySelectorAll('.error').forEach(span => span.textContent = '');
+
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const userId = document.getElementById('userId').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const confirmPassword = document.getElementById('confirmPassword').value.trim();
+
+            if (firstName === '') {
+                document.getElementById('firstNameError').textContent = 'First name cannot be empty';
+                hasError = true;
+            }
+
+            if (lastName === '') {
+                document.getElementById('lastNameError').textContent = 'Last name is cannot be empty';
+                hasError = true;
+            }
+
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (email === '') {
+                document.getElementById('emailError').textContent = 'Email cannot be empty';
+                hasError = true;
+            } else if (!emailPattern.test(email)) {
+                document.getElementById('emailError').textContent = 'Invalid email format';
+                hasError = true;
+            }
+
+            if (userId === '') {
+                document.getElementById('userIdError').textContent = 'User ID cannot be empty';
+                hasError = true;
+            }
+
+            if (password === '') {
+                document.getElementById('passwordError').textContent = 'Password cannot be empty';
+                hasError = true;
+            }
+
+            if (confirmPassword === '') {
+                document.getElementById('confirmPasswordError').textContent = 'Confirm Password cannot be empty';
+                hasError = true;
+            } else if (password !== confirmPassword) {
+                document.getElementById('confirmPasswordError').textContent = 'Passwords do not match';
+                hasError = true;
+            }
+
+            if (!hasError) {
+                alert('Form submitted successfully!');
+            }
+        });
+    </script>
 </body>
 
 </html>
